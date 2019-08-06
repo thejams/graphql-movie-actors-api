@@ -15,18 +15,18 @@ const mainUtils = new MainUtils()
 
 
 /**
- * @description get a list of all actors.
- * @method listActors
+ * @description get a list of all movies.
+ * @method listMovies
  * @param {Object} req. a request object.
  * @param {Object} res. a response object.
  * @param {Object} params. all the params of the request.
  * @return {promise} response, an object with the information of the user including refresh and access tokens.
  */
-hash.set('GET /', async function listActors (req, res, params) {
+hash.set('GET /', async function listMovies (req, res, params) {
   try {
     if ('0' in req.query)
       req.query = JSON.parse(req.query['0'])
-    let actors = mainUtils.listActors(req.query)
+    let actors = mainUtils.listMovies(req.query)
     return send(res, 200, actors)
   } catch (err) {
     return send(res, 500, { error: err.message })
@@ -34,16 +34,16 @@ hash.set('GET /', async function listActors (req, res, params) {
 })
 
 /**
- * @description get a specific actor.
- * @method getActor
+ * @description get a specific movie.
+ * @method getMovie
  * @param {Object} req. a request object.
  * @param {Object} res. a response object.
  * @param {Object} params. all the params of the request.
  * @return {promise} response, an object with the information of the user including refresh and access tokens.
  */
-hash.set('GET /:id', async function getActor (req, res, params) {
+hash.set('GET /:id', async function getMovie (req, res, params) {
   try {
-    let actor = mainUtils.getActor(params.id)
+    let actor = mainUtils.getMovie(params.id)
     if (actor)
       return send(res, 200, actor)
     return send(res, 404, {error: 'actor not found'})

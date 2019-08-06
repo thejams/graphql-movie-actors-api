@@ -6,7 +6,9 @@ class MainUtils {
   constructor() {}
 
   getActor (id) {
-    return actors[0]
+    return actors.find((actor)  => {
+      return actor.id === id
+    })
   }
 
   listActors () {
