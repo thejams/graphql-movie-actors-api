@@ -26,6 +26,8 @@ hash.set('GET /', async function listActors (req, res, params) {
   try {
     if ('0' in req.query)
       req.query = JSON.parse(req.query['0'])
+    else if (req.query && req.query.movies)
+      req.query.movies = JSON.parse(req.query.movies)
     let actors = mainUtils.listActors(req.query)
     return send(res, 200, actors)
   } catch (err) {

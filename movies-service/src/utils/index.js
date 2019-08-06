@@ -11,8 +11,18 @@ class MainUtils {
     })
   }
 
-  listMovies () {
-    return movies
+  listMovies (query) {
+    let response = movies
+    if (query && query.actors) {
+        const actorsSet = new Set([...query.actors])
+        response = movies.filter(movie => {
+            let moviesSet = new Set(movie.actors)
+            let intersection = [...new Set([...actorsSet].filter(actor => moviesSet.has(actor)))]
+            if (intersection.length > 0)
+                return movie
+        })
+    }
+    return response
   }
 }
 

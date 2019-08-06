@@ -3,6 +3,15 @@
       "name": "Monica Bellucci",
       "age": "TBD" ,
       "picture": "/z3sLuRKP7hQVrvSTsqdLjGSldwG.jpg",
-      "id": "1"
+      "id": 1,
+      "movies": [
+        1
+      ]
+    },
+    {
+      "name": "Emma Watson",
+      "age": "TBD" ,
+      "picture": "/z3sLuRKP7hQVrvSTsqdLjGSldwG.jpg",
+      "id": 2
     }
 ]
