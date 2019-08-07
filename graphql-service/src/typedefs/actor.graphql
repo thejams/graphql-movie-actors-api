@@ -1,0 +1,12 @@
+type Actor {
+  id: Int,
+  name: String,
+  picture: String,
+  age: Int,
+  movies: [Movie]
+},
+
+type Query {
+  listActors(limit: Int, page: Int): [Actor],
+  getActor(id: String): Actor,
+}

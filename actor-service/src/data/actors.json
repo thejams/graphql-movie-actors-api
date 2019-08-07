@@ -1,8 +1,8 @@
 [
     {
       "name": "Monica Bellucci",
-      "age": "TBD" ,
-      "picture": "/z3sLuRKP7hQVrvSTsqdLjGSldwG.jpg",
+      "age": 54,
+      "picture": "http://es.web.img2.acsta.net/pictures/17/05/17/15/04/501828.jpg",
       "id": 1,
       "movies": [
         1
@@ -10,8 +10,8 @@
     },
     {
       "name": "Emma Watson",
-      "age": "TBD" ,
-      "picture": "/z3sLuRKP7hQVrvSTsqdLjGSldwG.jpg",
+      "age": 29,
+      "picture": "https://static.independent.co.uk/s3fs-public/thumbnails/image/2019/08/04/16/emma-watson-0.jpg?w968h681",
       "id": 2
     }
 ]

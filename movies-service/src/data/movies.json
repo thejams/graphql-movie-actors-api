@@ -1,7 +1,7 @@
 [
     {
       "name": "Spectre",
-      "year": "TBD" ,
+      "year": 2015,
       "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTi07IvtC7HKBo1H-P-ATp0PfNTA9HobXPcw1tf4DKuIwvK6E4b",
       "id": 1,
       "actors": [
@@ -10,7 +10,7 @@
     },
     {
       "name": "Avengers Endgame",
-      "year": "TBD" ,
+      "year": 2019,
       "picture": "https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_UX182_CR0,0,182,268_AL_.jpg",
       "id": 2
     }
