@@ -24,6 +24,6 @@
     "moment": "2.24.0",
     "querystring": "0.2.0",
     "url": "0.11.0",
-    "validator": "10.11.0"
+    "validator": "13.7.0"
   }
 }
